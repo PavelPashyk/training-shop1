@@ -1,0 +1,43 @@
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.producto-imagen {
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+.producto-detalles {
+  background-color: $main;
+  color: $white;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin-top: -2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.producto-titulo {
+  font-size: 1rem;
+}
+
+.producto-agregar {
+  border: 0;
+  background-color: $white;
+  color: $main;
+  padding: 0.4rem;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: 2px solid $white;
+  transition: background-color 0.2s, color 0.2s;
+
+  &:hover {
+    background-color: $main;
+    color: $white;
+  }
+}
